@@ -1,0 +1,50 @@
+{
+  "name": "siletz-valley-fire-dashboard",
+  "version": "1.0.0",
+  "description": "Real-time incident dashboard for Siletz Valley Fire District with Active 911 integration",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon server/index.js",
+    "client": "react-scripts start",
+    "build": "react-scripts build",
+    "start": "node server/index.js",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "axios": "^1.6.4",
+    "socket.io-client": "^4.5.4",
+    "express": "^4.18.2",
+    "socket.io": "^4.5.4",
+    "dotenv": "^16.3.1",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "react-scripts": "5.0.1",
+    "concurrently": "^7.6.0",
+    "nodemon": "^3.0.2",
+    "tailwindcss": "^3.3.0",
+    "postcss": "^8.4.24",
+    "autoprefixer": "^10.4.14"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
